@@ -20,6 +20,16 @@ hashing | description
 classic_algorithms | description
 cache_misses | description
 
+## Practical Exercises Ideas
+
+* Getting all the tools set up properly, especially the basic ones.
+* Basic data structures. Arrays, matrices (2d arrays). Memory layouts.
+* Fundamentals of memory, addresses, pointers. Heap and stack.
+* Searching
+* Sorting e.g. write a ... algorithm
+* Measuring and estimating different peformance and cost aspects
+* Good coding habits learned by measuring hidden-ish costs of bad ones.
+
 ## Twitter Responses
 
 ["hey programming professionals! what do you wish graduates knew about data structures and algorithms? i'm making a new course. please RT."](https://twitter.com/capnramses/status/752905320326950912)
