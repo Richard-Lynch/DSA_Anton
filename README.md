@@ -9,7 +9,7 @@ Is WebGL a good tool to do this? Or would it be better to have some exemplar C c
 
 folder | description
 ------ | -----------
-linked_lists | description
+linked_lists | example building a simple linked list in C99
 stacks | description
 queues | description
 lists | description
