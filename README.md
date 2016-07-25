@@ -5,7 +5,7 @@ work in progress
 ## Demos
 
 Some sort of visual demos of different ideas in action.
-Is WebGL a good tool to do this?
+Is WebGL a good tool to do this? Or would it be better to have some exemplar C code and Makefiles etc...
 
 folder | description
 ------ | -----------
