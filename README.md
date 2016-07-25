@@ -4,6 +4,9 @@ work in progress
 
 ## Demos
 
+Some sort of visual demos of different ideas in action.
+Is WebGL a good tool to do this? Or would it be better to have some exemplar C code and Makefiles etc...
+
 folder | description
 ------ | -----------
 linked_lists | description
@@ -18,6 +21,17 @@ traversing_graphs | description
 sorting | description
 hashing | description
 classic_algorithms | description
+cache_misses | description
+
+## Practical Exercises Ideas
+
+* Getting all the tools set up properly, especially the basic ones.
+* Basic data structures. Arrays, matrices (2d arrays). Memory layouts.
+* Fundamentals of memory, addresses, pointers. Heap and stack.
+* Searching
+* Sorting e.g. write a ... algorithm
+* Measuring and estimating different peformance and cost aspects
+* Good coding habits learned by measuring hidden-ish costs of bad ones.
 
 ## Twitter Responses
 
@@ -37,3 +51,9 @@ classic_algorithms | description
 * *Algorithmic analysis and Big-O most important.*
 Stephen Oman ‏@stephen_oman  Jul 12
 
+##Resources
+
+Some good books and websites with good animations or demonstrations.
+
+* Amit Patel - http://www.redblobgames.com/
+* David Galles of USFCA - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
