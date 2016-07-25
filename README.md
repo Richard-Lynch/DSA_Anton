@@ -67,5 +67,5 @@ Some good books and websites with good animations or demonstrations.
 * Compilers/linkers: GCC, MinGW, Clang, MS cl
 * Debuggers: GDB, LLDB, MSVS
 * Visual interfaces: Visual Studio Code, Visual Studio, etc. etc.
-* Profiling and perf: `perf stat ./my_prog` (some CPUs need explicit `perf stat -B -e cache-references,cache-misses,cycles,instructions,branches,faults,migrations sleep 5`), `/usr/bin/time -v ./my_prog`, `valgrind ./my_prog`, `valgrind --tool=cachegrind ./my_prog`, gprof, top, sysmons, high-precision timers in code
+* Profiling and perf: `perf stat ./my_prog` (some CPUs need explicit `perf stat -B -e cache-references,cache-misses,cycles,instructions,branches,faults,migrations sleep 5`), `/usr/bin/time -v ./my_prog`, `valgrind ./my_prog`, `valgrind --tool=cachegrind ./my_prog`, gprof, top, sysmons, high-precision timers in code, Intel VTune and PCM, AMD CodeAnalyst and CodeXL, MS Visual Studio Profiler.
 * Static analysis: scan-build
