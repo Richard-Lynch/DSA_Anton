@@ -57,6 +57,9 @@ Some good books and websites with good animations or demonstrations.
 
 * Amit Patel - http://www.redblobgames.com/
 * David Galles of USFCA - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+* Valgrind - http://valgrind.org/
+* Cachegrind manual - http://valgrind.org/docs/manual/cg-manual.html 
+   * a good cache-miss example for L1 (next to registers) is traversing a matrix by column with power-of-two rows
 
 ##Tools
 
