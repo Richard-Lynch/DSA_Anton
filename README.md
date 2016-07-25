@@ -1,11 +1,23 @@
 # data_structures_algorithms
 notes, demos, slides
+work in progress
 
 ## Demos
 
-| linked_lists | description |
-| linked_lists | description |
-| linked_lists | description |
+folder | description
+------ | -----------
+linked_lists | description
+stacks | description
+queues | description
+lists | description
+general_trees | description
+binary_trees | description
+binary_search_trees | description
+sets_bags_graphs | description
+traversing_graphs | description
+sorting | description
+hashing | description
+classic_algorithms | description
 
 ## Twitter Responses
 
