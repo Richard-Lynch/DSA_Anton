@@ -1,6 +1,12 @@
 # data_structures_algorithms
 notes, demos, slides
 
+## Demos
+
+| linked_lists | description |
+| linked_lists | description |
+| linked_lists | description |
+
 ## Twitter Responses
 
 ["hey programming professionals! what do you wish graduates knew about data structures and algorithms? i'm making a new course. please RT."](https://twitter.com/capnramses/status/752905320326950912)
