@@ -57,3 +57,11 @@ Some good books and websites with good animations or demonstrations.
 
 * Amit Patel - http://www.redblobgames.com/
 * David Galles of USFCA - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
+##Tools
+
+* Compilers/linkers: GCC, MinGW, Clang, MS cl
+* Debuggers: GDB, LLDB, MSVS
+* Visual interfaces: Visual Studio Code, Visual Studio, etc. etc.
+* Profiling and perf: `perf stat ./my_prog` (some CPUs need explicit `perf stat -B -e cache-references,cache-misses,cycles,instructions,branches,faults,migrations sleep 5`), `/usr/bin/time -v ./my_prog`, `valgrind ./my_prog`, gprof, top, sysmons
+* Static analysis: scan-build
