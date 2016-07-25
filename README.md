@@ -4,6 +4,9 @@ work in progress
 
 ## Demos
 
+Some sort of visual demos of different ideas in action.
+Is WebGL a good tool to do this?
+
 folder | description
 ------ | -----------
 linked_lists | description
