@@ -18,6 +18,7 @@ traversing_graphs | description
 sorting | description
 hashing | description
 classic_algorithms | description
+cache_misses | description
 
 ## Twitter Responses
 
