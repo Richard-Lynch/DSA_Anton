@@ -51,3 +51,9 @@ cache_misses | description
 * *Algorithmic analysis and Big-O most important.*
 Stephen Oman ‏@stephen_oman  Jul 12
 
+##Resources
+
+Some good books and websites with good animations or demonstrations.
+
+* Amit Patel - http://www.redblobgames.com/
+* https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
