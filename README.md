@@ -1,4 +1,4 @@
-# data_structures_algorithms
+# Data Structures & Algorithms
 notes, demos, slides
 work in progress
 
