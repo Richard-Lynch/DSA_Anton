@@ -17,10 +17,10 @@
 #include <stdbool.h> // for bool in C99
 #include <stdlib.h> // memory allocation
 
-typedef struct Node Node;
+typedef struct Node Node; // forward declare type and alias `struct Node` with `Node`
 struct Node{
 	char data[256];
-	Node* next;
+	Node* next; // note: we refer to our own type here
 };
 
 bool add_node(Node** list, const char* data){
@@ -30,6 +30,7 @@ bool add_node(Node** list, const char* data){
 		fprintf(stderr, "ERROR: out of memory. %s:%i\n", __FILE__, __LINE__);
 		return false;
 	}
+	// if this is the first node in the list, what value will ->next receive?
 	new_node->next = *list;
 	strcpy(new_node->data, data);
 	*list = new_node;
