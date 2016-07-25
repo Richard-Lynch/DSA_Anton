@@ -56,4 +56,4 @@ Stephen Oman ‏@stephen_oman  Jul 12
 Some good books and websites with good animations or demonstrations.
 
 * Amit Patel - http://www.redblobgames.com/
-* https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+* David Galles of USFCA - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
