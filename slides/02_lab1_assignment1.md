@@ -14,6 +14,7 @@
 ##Deliverables
 
 * A pdf containing your final output image and a brief summary of your solution
+* List some advantages and disadvantages of the PPM format for general use.
 * Your .c file (with your name and date in a comment in the top).
 * Do not submit IDE project/solution files, or the compiled binary.
 
