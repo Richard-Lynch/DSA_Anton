@@ -21,7 +21,7 @@
   - risk of very thin layer (not deep enough knowledge)
   - over-engineering
   - post-dot com era abstraction/"top-down" thinking
-  - dependent on libraries/frameworks made by others
+  - dependent on libraries/frameworks/stacks made by others
   - hours of experience
 
 * goals of course
