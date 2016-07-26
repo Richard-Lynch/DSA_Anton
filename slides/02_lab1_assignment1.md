@@ -26,7 +26,8 @@ Complete the self-assessment survey first.
 You are to write a simple C program that allocates some memory, manipulate that
 memory using built-in functions and your own loops, and then visualise that
 memory by writing it out to an image file. We will not be using C++ memory
-allocation (the `new` keyword) for this assignment - we want to dig deeper.
+allocation (the `new` keyword) for this assignment - we want to dig deeper. We
+won't be using any third-party libraries.
 
 ###Part 1
 
