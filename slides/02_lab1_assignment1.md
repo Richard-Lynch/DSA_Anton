@@ -52,7 +52,7 @@ our leaked memory will be automatically freed, but it's a good habit.
 PPM is a very simple image format that can viewed by most image-viewing
 software, and can be written as an ASCII text file.
 
-It should have the declaration:
+It should have a declaration similar to:
 
     void write_ppm(const unsigned char* image_data, int w, int h);
 
