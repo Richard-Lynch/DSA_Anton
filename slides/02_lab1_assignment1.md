@@ -42,7 +42,7 @@ Use either the `malloc()` or `calloc()` function to allocate an array of bytes t
 You may define a width and height variable for your image size.
 Each pixel in your image requires 3 bytes - one for each of the red, green, and
 blue channels, respectively.
-The unsigned char data type is a good representation of 1 byte in C.
+The `unsigned char` data type is a good representation of 1 byte in C.
 Use the `memset()` function to clear the entire image to white.
 Use `free()` to deallocate the memory before the program exits. Note that on exit
 our leaked memory will be automatically freed, but it's a good habit.
