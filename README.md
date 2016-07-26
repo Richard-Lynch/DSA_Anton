@@ -33,6 +33,9 @@ cache_misses | description
 * Measuring and estimating different peformance and cost aspects
 * Good coding habits learned by measuring hidden-ish costs of bad ones.
 
+If assignments write output to an image file...simple data transformation,
+I/O, and visualise output of e.g. search algorithms. Can turn into a .gif.
+
 ## Twitter Responses
 
 ["hey programming professionals! what do you wish graduates knew about data structures and algorithms? i'm making a new course. please RT."](https://twitter.com/capnramses/status/752905320326950912)
