@@ -15,6 +15,7 @@
 
 * A pdf containing your final output image and a brief summary of your solution
 * Your .c file (with your name and date in a comment in the top).
+* Do not submit IDE project/solution files, or the compiled binary.
 
 Please do not compress these into a .zip - it's harder for the demonstrators to
 open in the web system.
