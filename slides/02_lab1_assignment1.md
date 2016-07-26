@@ -90,7 +90,7 @@ in C or C++ mode. i.e. main.c, rather than main.cpp.
 * Have a good grasp of C memory functions; `malloc()`, `calloc()`, `free()`,
 `memset()`, `memcpy()` etc. and other basic C functions; `assert()` file I/O etc.
 * You may have to look up these functions to find out which header file to use;
-e.g. malloc() is in stdlib.h but memcpy() is in string.h.
+e.g. `malloc()` is in `stdlib.h` but `memcpy()` is in `string.h`.
 * On Unix-derived operating systems you can type `man memcpy` etc. To get a
 manual page for that function. There are good websites too; cprogramming.com,
 cplusplus.com.
