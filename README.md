@@ -9,7 +9,7 @@ Is WebGL a good tool to do this? Or would it be better to have some exemplar C c
 
 folder | description
 ------ | -----------
-linked_lists | description
+linked_lists | building a simple linked list in C99
 stacks | description
 queues | description
 lists | description
@@ -57,3 +57,15 @@ Some good books and websites with good animations or demonstrations.
 
 * Amit Patel - http://www.redblobgames.com/
 * David Galles of USFCA - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+* Keith O'Conor's slides from talks at TCD - http://www.fragmentbuffer.com/publications/
+* Valgrind - http://valgrind.org/
+* Cachegrind manual - http://valgrind.org/docs/manual/cg-manual.html 
+   * a good cache-miss example for L1 (next to registers) is traversing a matrix by column with power-of-two rows
+
+##Tools
+
+* Compilers/linkers: GCC, MinGW, Clang, MS cl
+* Debuggers: GDB, LLDB, MSVS
+* Visual interfaces: Visual Studio Code, Visual Studio, etc. etc.
+* Profiling and perf: `perf stat ./my_prog` (some CPUs need explicit `perf stat -B -e cache-references,cache-misses,cycles,instructions,branches,faults,migrations sleep 5`), `/usr/bin/time -v ./my_prog`, `valgrind ./my_prog`, `valgrind --tool=cachegrind ./my_prog`, gprof, top, sysmons, high-precision timers in code, Intel VTune and PCM, AMD CodeAnalyst and CodeXL, MS Visual Studio Profiler.
+* Static analysis: scan-build

@@ -7,12 +7,6 @@
 // to compile with gcc: gcc -o lldemo main.c
 // to compile with visual studio: can compile as C++. comment out #include <stdbool.h>
 
-/* TODO
-* graphical or console display output
-* add and remove and find nodes buttons
-* perf and measure costs
-*/
-
 #include <stdio.h> // standard I/O functions
 #include <assert.h> // force crash on major errors
 #include <string.h> // strings and data copies
