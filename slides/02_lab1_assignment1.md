@@ -30,7 +30,7 @@ memory by writing it out to an image file. We will not be using C++ memory
 allocation (the `new` keyword) for this assignment - we want to dig deeper. We
 won't be using any third-party libraries.
 
-###Part 1
+###Task 1
 
 Set up an environment to compile a simple C "Hello World" type program. You
 may use any compiler/IDE software. The labs should have at least gcc (GNU C
@@ -44,7 +44,7 @@ Use the `memset()` function to clear the entire image to white.
 Use `free()` to deallocate the memory before the program exits. Note that on exit
 our leaked memory will be automatically freed, but it's a good habit.
 
-###Part 2
+###Task 2
 
 PPM is a very simple image format that can viewed by most image-viewing
 software, and can be written as an ASCII text file.
@@ -66,7 +66,7 @@ Your function should occupy less than 20 lines of code.
 Use the function to write your block of image memory out to a file. Open it
 in an image viewer or paint program.
 
-##Part 3
+###Task 3
 
 Write a loop or loops to draw a diagonal line from one corner of the image to
 another.
