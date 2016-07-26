@@ -13,8 +13,10 @@
 
 ##Deliverables
 
-* A pdf containing your final output image and a brief summary of your solution
-* List some advantages and disadvantages of the PPM format for general use.
+* A pdf containing
+  * your final output image(s)
+  * a brief summary of your solution
+  * your opinion on a few pros/cons of the PPM format
 * Your .c file (with your name and date in a comment in the top).
 * Do not submit IDE project/solution files, or the compiled binary.
 
@@ -98,3 +100,4 @@ time I checked.
 * For a nice library to write to other formats of image look for [stb_image_write](https://github.com/nothings/stb/blob/master/stb_image_write.h)
 * If you write images out in a sequence with numbered filenames you can turn them
 into a .gif or movie file.
+* Consider how you might write a function to plot a sine wave onto the image space.
