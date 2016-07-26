@@ -92,3 +92,5 @@ friendlier to work with. Visual Studio doesn't have excellent C99 support last
 time I checked.
 * For a nice library to write to other formats of image look for stb_image_write
 https://github.com/nothings/stb/blob/master/stb_image_write.h
+* If you write images out in a sequence with numbered filenames you can turn them
+into a .gif or movie file.
