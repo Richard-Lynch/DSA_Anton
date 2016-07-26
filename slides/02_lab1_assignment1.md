@@ -46,7 +46,7 @@ The `unsigned char` data type is a good representation of 1 byte in C.
 Use the `memset()` function to clear the entire image to white.
 Use `free()` to deallocate the memory before the program exits. Note that on exit
 our leaked memory will be automatically freed, but it's helpful to free everything
-that we allocate, as everything else left over at the end we know is a leak.
+that we allocate, as everything else left over might help us find a leak.
 
 ###Task 2
 
