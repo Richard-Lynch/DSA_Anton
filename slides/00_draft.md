@@ -37,7 +37,7 @@
 First assignment/lab
 --------------------
 - self-assessment survey
-- settings up compile environment with C
+- setting up compile environment with C
 - memory allocation and looping over arrays
   + timers and simple analysis
 - formal report/summary of program
