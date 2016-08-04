@@ -18,6 +18,13 @@
 5. strong code and analytical habits and code simiplification
 6. able to employ a variety of profiling, debugging, and optimisation tools
 
+##Good Habits
+* Maintain a `my_name.c` set of utility data structures and functions.
+* Build a folder of test/experiment/demo projects e.g. on GitHub.
+* Make time to practice 30mins-1hr per day, always.
+* Read experts' code. Find their GitHub accounts etc. Ask. Steal their tricks.
+* Work on projects with other people.
+
 ##Discussion Questions
 * what is the fundamental task of a computer program?
 
