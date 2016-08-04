@@ -5,13 +5,24 @@
 ##Calendar and Schedule
 * 3 lectures + 1 tutorial + 1 lab per week
 * Put times here when confirmed
+* About ~8 assignments
 
-Week Starting | Topics
---------------|-------
-date          | topics
-date          | topics
-date          | topics
-date          | topics
+Week Starting | Topics | Assignment
+--------------|--------|-----------
+date          | topics        | memory refresher
+date          | topics        | memory refresher
+date          | topics        | stacks/queues/lists
+date          | topics        | stacks/queues/lists
+date          | topics        | trees and graphs
+date          | topics        | trees and graphs
+date          | topics        | sorting
+date          | topics        | sorting
+date          | reading week  | searching
+date          | topics        | searching
+date          | topics        | hashing
+date          | topics        | hashing
+date          | review        | 
+date          | exam break    | -
 
 
 ##Contents
