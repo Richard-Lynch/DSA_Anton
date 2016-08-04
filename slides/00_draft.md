@@ -7,8 +7,11 @@
 * Put times here when confirmed
 
 Week Starting | Topics
-----------------------
-date          | 
+--------------|-------
+date          | topics
+date          | topics
+date          | topics
+date          | topics
 
 
 ##Contents
