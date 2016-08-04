@@ -1,0 +1,7 @@
+* undestanding the memory-cache levels-registers
+* cost of various instructions for particular architectures
+* cost of calling a function
+* understanding compiled assembler/intermediate
+* this thing is great https://gcc.godbolt.org/
+* instruction tables and opt guidelines for programmers http://www.agner.org/optimize/
+* also see intel/amd manuals
