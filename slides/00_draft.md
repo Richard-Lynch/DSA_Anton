@@ -111,3 +111,40 @@ First assignment/lab
 - formal report/summary of program
 - .c file
 - grading rubrik similar to berkeley's
+
+##Arrays
+
+* sequential memory (each item has an address sizeof() bytes after the previous one)
+* easy to write and access with an integer index. this is equiv of &first + sizeof() * i
+* .: trivial to iterate over in a loop
+* each array item can be POD (including a pointer) or a struct
+* has a maximum size when inside a function (depends on computer and OS) - try it, find out how much
+(on the stack)
+* when a global it is store in static memory (similar to heap) and is essentially unlimited
+* can be multi-dimensional (but multi-dimension arrays just flatten to 1d in memory)
+* multi-dimensional arrays usually add confusion/hide data order which is unhelpful (why?)
+* fixed length (although language extensions and libraries have dynamic or resizeable arrays)
+* this should be your go-to option for 99% of cases (reasons why?)
+* most complex data structures can be flattened into an array if you think about it hard enough
+* dynamic memory allocation (on the heap) closely resembles an array but they are not exactly the same
+* the computer is designed _at the hardware level_ to process sequential memory like arrays _most_ efficiently
+* do you know how to find out and print the memory address values from e.g. every index of a 2d array?
+
+##Dynamic Memory
+
+* can allocate 1 item, or a whole block of them (like an array)
+* if using a block then can be iterated over like an array
+* can be initialised to 0 or some number with `calloc()`
+* not fixed size. can be allocated using a variable after the program has started.
+* e.g. user wants to write an image and chooses the dimensions and bits per pixel
+* can also be resized later `realloc()`
+* riskier because can introduce leaks
+* allocation and deallocation are not free (don't do allocation or freeing inside a loop if poss)
+* you can allocate a big pool at program start and then give subsequent requests bits of that
+* if you need more resize the pool later
+* pools can be freed when context ends (then you know all leaks are cleared)
+* array of structs vs struct of arrays
+* short story: helpful but C/C++ don't provide good tracking/accounting tools
+* languages with automatic garbage collection introduce major performance problems
+* best solution: know what's happening, know how and when to stimulate alloc/free events, create your own managers
+* don't allow libraries or tools to have control over memory allocation or freeing.
