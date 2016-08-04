@@ -16,6 +16,7 @@
 3. implement both efficiently
 4. discuss size and computational cost and complexity of different approaches
 5. strong code and analytical habits and code simiplification
+6. able to employ a variety of profiling, debugging, and optimisation tools
 
 ##Discussion Questions
 * what is the fundamental task of a computer program?
