@@ -34,6 +34,25 @@
 
 -------------------------------------------------------
 
+Refreshing C Programming
+------------------------
+* role of language, compiler, linker
+* basic program structure
+* headers, c files conventions, pragma, no code in header
+* C99 (ignoring C++ for now)
+* good habits, using blocks rather than lots of tiny functions
+* memory allocation and deallocation
+* pointers are not arrays
+* pointers and addresses, dereferencing chains
+* memory size and stride
+* reading and writing
+* structs
+* copying memory using memcpy()
+* debugging, backtraces, finding leaks
+* inline functions
+* profiling
+* timers
+
 First assignment/lab
 --------------------
 - self-assessment survey
