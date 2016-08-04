@@ -1,3 +1,23 @@
+#Overview
+##Aim
+* practical knowledge of standard data structures and algorithms
+
+##Calendar
+* 3 lectures + 1 tutorial + 1 lab per week
+
+##Contents
+* Structured types. Array, list, tree, and graph algorithms.
+* Hash tables. Dynamic data structures. Abstract data types.
+* Lots of practical lab work and skill development.
+
+##Outcomes
+1. know a complement of data structures and algorithms
+2. understand which are more appropriate for given project
+3. implement both efficiently
+4. discuss size and computational cost and complexity of different approaches
+5. strong code and analytical habits and code simiplification
+
+##Discussion Questions
 * what is the fundamental task of a computer program?
 
 * fundamental task of a computer program
