@@ -20,7 +20,7 @@
 
 ##Good Habits
 * Maintain a `my_name.c` set of utility data structures and functions.
-* Build a folder of test/experiment/demo projects e.g. on GitHub.
+* Build up a folder of test/experiment/demo projects e.g. on GitHub.
 * Make time to practice 30mins-1hr per day, always.
 * Read experts' code. Find their GitHub accounts etc. Ask. Steal their tricks.
 * Work on projects with other people.
