@@ -6,6 +6,7 @@
 * 3 lectures + 1 tutorial + 1 lab per week
 * Put times here when confirmed
 * About ~8 assignments
+* First week free?
 
 Week Starting | Topics | Assignment
 --------------|--------|-----------
