@@ -23,6 +23,13 @@ hashing | description
 classic_algorithms | description
 cache_misses | description
 
+## Tutorials
+
+week | description
+-----|-----------------------------------------
+t0   | loops, memory, heap, stack, measurements
+t1   | 
+
 ## Practical Exercises Ideas
 
 * Getting all the tools set up properly, especially the basic ones.
