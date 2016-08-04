@@ -138,7 +138,7 @@ First assignment/lab
 * not fixed size. can be allocated using a variable after the program has started.
 * e.g. user wants to write an image and chooses the dimensions and bits per pixel
 * can also be resized later `realloc()`
-* riskier because can introduce leaks
+* riskier than plain arrays because can introduce leaks
 * allocation and deallocation are not free (don't do allocation or freeing inside a loop if poss)
 * you can allocate a big pool at program start and then give subsequent requests bits of that
 * if you need more resize the pool later
