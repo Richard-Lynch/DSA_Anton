@@ -2,8 +2,14 @@
 ##Aim
 * practical knowledge of standard data structures and algorithms
 
-##Calendar
+##Calendar and Schedule
 * 3 lectures + 1 tutorial + 1 lab per week
+* Put times here when confirmed
+
+Week Starting | Topics
+----------------------
+date          | 
+
 
 ##Contents
 * Structured types. Array, list, tree, and graph algorithms.
