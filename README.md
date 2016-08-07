@@ -71,6 +71,8 @@ Some good books and websites with good animations or demonstrations.
 * Valgrind - http://valgrind.org/
 * Cachegrind manual - http://valgrind.org/docs/manual/cg-manual.html 
    * a good cache-miss example for L1 (next to registers) is traversing a matrix by column with power-of-two rows
+* relative instruction/memory/cache speeds http://norvig.com/21-days.html#answers
+   * from nice article - http://norvig.com/21-days.html
 
 ##Tools
 
