@@ -7,6 +7,9 @@ work in progress
 Some sort of visual demos of different ideas in action.
 Is WebGL a good tool to do this? Or would it be better to have some exemplar C code and Makefiles etc...
 
+* image resizing is a good problem
+* analysis techniques and big O
+
 folder | description
 ------ | -----------
 linked_lists | building a simple linked list in C99
@@ -63,8 +66,23 @@ Stephen Oman ‏@stephen_oman  Jul 12
 
 ##Resources
 
+###Books to Check Out
+
+* https://www.amazon.com/Data-Structures-Algorithms-Made-Easy/dp/1468108867/
+* https://www.amazon.com/Data-Structures-Algorithms-Alfred-Aho/dp/0201000237/
+* Cormen - on MIT reading list - https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/
+* https://www.amazon.com/Data-Structures-Algorithm-Analysis-C/dp/013284737X/ - looks very C++. classes templates etc.
+* Sedgewick - looks very good - https://www.amazon.com/Algorithms-Robert-Sedgewick-ebook/dp/B004P8J1NA
+* Dasgupta - on Brown reading list - https://www.amazon.com/Algorithms-Sanjoy-Dasgupta/dp/0073523402
+* Kleinberg - on MIT list - https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358/
+
+###Other
+
 Some good books and websites with good animations or demonstrations.
 
+* MIT open courseware Algorithms (has assignments etc) http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/
+* Brown - Algorithms (has assignments also) http://cs.brown.edu/courses/cs016/
+* Harvard - has assignments etc. http://www.fas.harvard.edu/~libcs124/cs124/
 * Amit Patel - http://www.redblobgames.com/
 * David Galles of USFCA - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 * Keith O'Conor's slides from talks at TCD - http://www.fragmentbuffer.com/publications/
