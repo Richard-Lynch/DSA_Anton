@@ -70,7 +70,7 @@ Stephen Oman ‏@stephen_oman  Jul 12
 
 * https://www.amazon.com/Data-Structures-Algorithms-Made-Easy/dp/1468108867/
 * https://www.amazon.com/Data-Structures-Algorithms-Alfred-Aho/dp/0201000237/
-* Cormen - on MIT reading list - https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/
+* Cormen - on everyone's reading list - https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/
 * https://www.amazon.com/Data-Structures-Algorithm-Analysis-C/dp/013284737X/ - looks very C++. classes templates etc.
 * Sedgewick - looks very good - https://www.amazon.com/Algorithms-Robert-Sedgewick-ebook/dp/B004P8J1NA
 * Dasgupta - on Brown reading list - https://www.amazon.com/Algorithms-Sanjoy-Dasgupta/dp/0073523402
