@@ -92,6 +92,7 @@ Some good books and websites with good animations or demonstrations.
 * relative instruction/memory/cache speeds http://norvig.com/21-days.html#answers
    * from nice article - http://norvig.com/21-days.html
 * interesting - implementing memory allocator functions. good mem model diags - http://arjunsreedharan.org/post/148675821737/write-a-simple-memory-allocator?utm_content=bufferf3bf2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+* https://en.wikipedia.org/wiki/Binary_space_partitioning
 
 ##Tools
 
