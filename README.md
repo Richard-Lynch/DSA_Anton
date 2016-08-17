@@ -94,6 +94,7 @@ Some good books and websites with good animations or demonstrations.
 * interesting - implementing memory allocator functions. good mem model diags - http://arjunsreedharan.org/post/148675821737/write-a-simple-memory-allocator?utm_content=bufferf3bf2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 * https://en.wikipedia.org/wiki/Binary_space_partitioning
 * https://fuzzyreflection.com/2016/08/15/maximizing-code-performance-by-thinking-data-first-part-2/?utm_content=bufferf8f48&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+* https://fgiesen.wordpress.com/2014/07/07/cache-coherency/
 
 ##Tools
 
