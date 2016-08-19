@@ -95,6 +95,7 @@ Some good books and websites with good animations or demonstrations.
 * https://en.wikipedia.org/wiki/Binary_space_partitioning
 * https://fuzzyreflection.com/2016/08/15/maximizing-code-performance-by-thinking-data-first-part-2/?utm_content=bufferf8f48&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 * https://fgiesen.wordpress.com/2014/07/07/cache-coherency/
+* really cool -- difference in ASM between short static array and STL vector https://twitter.com/k_kondrak/status/766341288358735872
 
 ##Tools
 
