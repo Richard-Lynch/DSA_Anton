@@ -31,6 +31,8 @@ memory by writing it out to an image file. We will not be using C++ memory
 allocation (the `new` keyword) for this assignment - we want to dig deeper. We
 won't be using any third-party libraries.
 
+See Lecture 3 for example code if you need a starter.
+
 ###Task 1
 
 * Set up an environment to compile a simple C or C++ "Hello World" type program. You may use any compiler/IDE software.
