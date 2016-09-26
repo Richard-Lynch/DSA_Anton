@@ -111,3 +111,6 @@ friendlier to work with than C89, which may be the default still.
 * If you write images out in a sequence with numbered filenames you can turn them
 into a .gif or movie file.
 * Consider how you might write a function to plot a sine wave onto the image space.
+* Being primarily visual beings, a lot of computing and data can be easier to understand
+or demonstrate the output of if you can write an image, chart, or animation. You may 
+also find it convenient to represent (or paint) input instances in an image.
