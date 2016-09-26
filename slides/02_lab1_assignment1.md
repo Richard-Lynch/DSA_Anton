@@ -1,4 +1,4 @@
-#Assignment 0, First lab (draft)
+#Assignment 0 - Warm-Up Lab
 
 ##Purpose of Assignment and Lab
 
