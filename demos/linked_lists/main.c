@@ -6,6 +6,10 @@
 //
 // to compile with gcc: gcc -o lldemo main.c
 // to compile with visual studio: can compile as C++. comment out #include <stdbool.h>
+//
+// Note: I allocate memory inside a function here. This is generally asking for trouble and the main cause of memory leaks.
+// We can discuss some strategies to improve this later on if you like.
+//
 
 #include <stdio.h> // standard I/O functions
 #include <assert.h> // force crash on major errors
