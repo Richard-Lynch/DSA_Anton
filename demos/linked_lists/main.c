@@ -19,9 +19,13 @@ struct Node{
 	Node* next; // note: we refer to our own type here
 };
 
-// C and C++ do not retain memory allocated to a pointer given as a function argument
-// to get around this we can add another pointer level (another *) and dereference back to a single level with *list
-// in C++ you can use Node*& notation instead
+// usually pointer arguments to a function are used to effect a "pass by reference"
+// e.g. void modify(int* some_integers_address)
+// but here we want to keep the pointer itself, which is actually "copied by value"
+// this means that if we allocate memory inside a funciton we will lose the pointer to it after the function finishes
+// - a memory leak
+// to get around this we can have a pointer to a pointer in C so we get "pass by reference"
+// in C++ you can use *& instead of ** which is a little easier to deal with.
 bool add_node(Node** list, const char* data){
 	assert(data); // crash deliberately if data is invalid
 	Node* new_node = (Node*)malloc(sizeof(Node));
