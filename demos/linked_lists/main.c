@@ -26,7 +26,7 @@ struct Node{
 
 // usually pointer arguments to a function are used to effect a "pass by reference"
 // e.g. void modify(int* some_integers_address)
-// but here we want to keep the pointer itself, which is actually "copied by value"
+// but here we want to keep the pointer itself, which is actually "pass by value"
 // this means that if we allocate memory inside a funciton we will lose the pointer to it after the function finishes
 // - a memory leak
 // to get around this we can have a pointer to a pointer in C so we get "pass by reference"
@@ -46,7 +46,7 @@ bool add_node(Node** list, const char* data){
 	return true;
 }
 
-// no need for Node** here because we don't allocate memory to the list inside the function
+// no need for Node** here because we don't need to change the values of pointers so pass by value is fine.
 void print_all_nodes(Node* list){
 	printf("entire list data contents:\n");
 	Node* ptr = list;
