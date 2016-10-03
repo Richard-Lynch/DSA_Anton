@@ -23,3 +23,5 @@
   * graphics (obv)
   * ML - guest lecture?
   * networking
+  * mobile development
+  * other languages and paradigms
