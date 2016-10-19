@@ -29,7 +29,7 @@ or ask to register a new name.
     "orko"
     "princess adora"
 
-7. calculate the _load_ of the hash table.
+7. calculate the _load_ of the hash table. give 2 reasons why table load is useful information.
 
 8. calculate average time complexity _T_ for the searches in Q(6).
 
