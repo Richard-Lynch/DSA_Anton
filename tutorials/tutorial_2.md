@@ -37,6 +37,6 @@ or ask to register a new name.
 
 10. approximate big-o style average, best, and worst complexity for the hash table. consider the table being completely empty and completely full. note that successful and unsuccesful evaluations of complexity are usually done separately (have 2 sets of best/worst/average approximations).
 
-11. how can we improve performance of the _worst_ unsuccesful search results in (9)?
+11. how can we improve performance of the _worst_ unsuccesful search results in (9)? Refer to diagram.
 
 12. If we later support any number of players, how (and why) might we consider modifying our hash table? Suggest possible changes to algorithm, type of hash table, and table size M. Is an altogether different sort of system more appropriate for very large sets of users - why?
