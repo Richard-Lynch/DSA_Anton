@@ -1,4 +1,4 @@
-# Data Structure and Algorithms - Tutorial 2 - C, Complexity, and Hash Tables Discussion - Anton Gerdelan <gerdela@scss.tcd.ie>
+# Data Structures and Algorithms - Tutorial 2 - C, Complexity, and Hash Tables Discussion - Anton Gerdelan <gerdela@scss.tcd.ie>
 
 Try to answer all questions then we will discuss them. Mostly test type questions but some are general talking points.
 
