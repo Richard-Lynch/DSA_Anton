@@ -22,12 +22,12 @@ or ask to register a new name.
 
 6. Start to construct a diagram of the linear probing hash table step-by-step to illustrate the following test usernames being stored, in order. Assume the hash table size has been set to M=8. You will need to make some hand calculations. You may simplify your hash function if you like. Beside each name below, write the table index and also count the number of 'probes' (investigations) required to store the names.
 
-"prince adam"
-"cringer"
-"teela"
-"aleet"
-"orko"
-"princess adora"
+    "prince adam"
+    "cringer"
+    "teela"
+    "aleet"
+    "orko"
+    "princess adora"
 
 7. calculate the _load_ of the hash table.
 
