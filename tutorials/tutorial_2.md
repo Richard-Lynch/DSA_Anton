@@ -16,11 +16,11 @@ or ask to register a new name.
 
 3. List 3 candidate data structures and appropriate algorithms for searching (and storing/retrieving) the users. Bullet advantages and disadvantages for each.
 
-4. In our test build our 'massively multiplayer' game supports about 16 users. Start to construct a diagram step-by-step to illustrate the creation of a _linear probing_ hash table. Suggest a sensible table size, M.
+4. In our test build our 'massively multiplayer' game supports about 16 users. We are going to use a _linear probing_ hash table. Suggest a sensible table size, M.
 
 5. Maximum username length is 16 characters. Write an algorithm (or code) for a suitable hash function. You may assume ASCII characters or some sort of unicode representation, as you prefer.
 
-6. Continue your diagram to show the following test usernames being stored, in order. Assume the hash table size has been set to M=8. You will need to make some hand calculations. You may simplify your hash function if you like. Beside each name below, write the table index and also count the number of 'probes' (investigations) required to store the names.
+6. Start to construct a diagram of the linear probing hash table step-by-step to illustrate the following test usernames being stored, in order. Assume the hash table size has been set to M=8. You will need to make some hand calculations. You may simplify your hash function if you like. Beside each name below, write the table index and also count the number of 'probes' (investigations) required to store the names.
 
 "prince adam"
 "cringer"
