@@ -27,16 +27,16 @@
 // we know that the left half will be first to mid
 // and the right half will be mid+1 to last
 void merge( int first, int last, int *array ) {
-    // make a temporary working array so we don't overwrite our data
-    // as we are reading it
-    // alloca is dynamic _stack_ memory - freed at function close
-    // you could do this with another sort of array or memory
-    int* result = alloca(sizeof(int) * (last - first));
+	// make a temporary working array so we don't overwrite our data
+	// as we are reading it
+	// alloca is dynamic _stack_ memory - freed at function close
+	// you could do this with another sort of array or memory
+	int *result = alloca( sizeof( int ) * ( last - first + 1 ) );
 
 	int mid_index = ( first + last ) / 2;
-	int left_index = first, right_index = mid_index + 1, output_index = first;
+	int left_index = first, right_index = mid_index + 1, output_index = 0;
 	// compare the lists until one list runs out of list
-	while ( left_index <= mid_index && right_index <= last ) { 
+	while ( left_index <= mid_index && right_index <= last ) {
 		if ( array[left_index] < array[right_index] ) {
 			result[output_index++] = array[left_index++];
 		} else {
@@ -52,16 +52,16 @@ void merge( int first, int last, int *array ) {
 	while ( right_index <= last ) {
 		result[output_index++] = array[right_index++];
 	}
-    // copy into original array
-    for (int i = first; i <= last; i++) {
-        array[i] = result[i];
-    }
+	// copy into original array
+	for ( int i = 0; i < output_index; i++ ) {
+		array[i + first] = result[i];
+	}
 }
 
 // declare here so i can recursively call self
-void merge_sort( int first_index, int last_index, int* data );
+void merge_sort( int first_index, int last_index, int *data );
 
-void merge_sort( int first_index, int last_index, int* data ) {
+void merge_sort( int first_index, int last_index, int *data ) {
 	// break recursion when counters meet in the middle
 	if ( first_index >= last_index ) {
 		return;
@@ -78,7 +78,7 @@ int main() {
 	int data[] = { 3, 4, 12, 1, 10, 23 }; // initialiser list for array giving
 																				// constant values
 
-    // sort with bisections, recursively, from indices 0 to 5, inclusive
+	// sort with bisections, recursively, from indices 0 to 5, inclusive
 	merge_sort( 0, 5, data );
 
 	for ( int i = 0; i < 6; i++ ) {
