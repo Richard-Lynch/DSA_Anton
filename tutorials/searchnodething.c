@@ -16,8 +16,8 @@ void search_list_function( Node* head, int search_val ) {
 	while(curr) {
 		// check if current node is the searched-for node
 		if (curr->val == search_val * 2) {
-			// create new node and point it's 'next' to current
-			// node so that is goes in-front of it
+			// create new node and point its 'next' to current
+			// node so that is goes in front of it
 			Node* tmp = (Node*)malloc( sizeof(Node) );
 			tmp->val = search_val;
 			tmp->next = curr;
