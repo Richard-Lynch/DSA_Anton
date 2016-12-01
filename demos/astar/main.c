@@ -12,3 +12,28 @@
 // path blue
 // random obstacles in black (C-shaped walls)
 
+#include <stdio.h>
+#include <assert.h>
+
+#define WORLD_SIZE 128
+
+// world contains costs of obstacles
+int world[WORLD_SIZE][WORLD_SIZE];
+int goal_x = WORLD_SIZE - 1;
+int goal_y = WORLD_SIZE - 1;
+
+// returns Manhattan distance
+int heuristic(int x, int y){
+  assert(x >= 0 && x < WORLD_SIZE);
+  assert(y >= 0 && y < WORLD_SIZE);
+  
+  int x_dist = goal_x - x;
+  int y_dist = goal_y - y;
+  return x_dist + y_dist + world[x][y];
+}
+
+int main(){
+  
+  
+  return 0; 
+}
