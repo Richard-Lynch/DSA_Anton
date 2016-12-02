@@ -79,7 +79,7 @@ void write_ppm( Coord goal, Coord* frontier, int frontier_len ) {
 			int r = 255, g = 255, b = 255;
 
       if (graph[row_idx][col_idx].was_visited) {
-        r = g = b = 128;
+        r = g = b = 200;
       }
 
       for (int i = 0; i < frontier_len; i++) {
@@ -102,7 +102,7 @@ void write_ppm( Coord goal, Coord* frontier, int frontier_len ) {
 				parent = graph[parent.y][parent.x].parent;
 			}
 			if ( graph[row_idx][col_idx].is_obstacle ) {
-				r = g = b = 0;
+				r = g = b = 100;
 			}
 			if ( row_idx == 0 && col_idx == 0 ) {
 				r = b = 0;
