@@ -19,9 +19,12 @@
 #include <stdlib.h> // abs
 
 #define NO_PARENT -1
-#define WORLD_SIZE 4
+#define WORLD_SIZE 16
 #define ADJACENT_MOVE_COST 1
 #define MAX_FRONTIER ( WORLD_SIZE * WORLD_SIZE )
+
+// uncomment this to spit out images (WARNING 28MB * 173 images)
+#define OUTPUT_IMAGES
 
 // a 2d coordinate
 typedef struct Coord { int x, y; } Coord;
@@ -33,6 +36,7 @@ typedef struct Node {
 	// accumulated cost of the path to here - may be updated
 	int cost;
 	bool was_visited;
+	bool is_obstacle;
 } Node;
 
 Node graph[WORLD_SIZE][WORLD_SIZE];
@@ -58,6 +62,63 @@ void reset_graph() {
 	}
 }
 
+void write_ppm( Coord goal, Coord* frontier, int frontier_len ) {
+	int img_scale = 50;
+	char fname[256];
+	static int seq = 0;
+	sprintf( fname, "out%05i.ppm", seq );
+	seq++;
+	FILE *fp = fopen( fname, "w" );
+	fprintf( fp, "P3\n%i %i\n255\n", WORLD_SIZE * img_scale, WORLD_SIZE * img_scale );
+
+	for ( int row = 0; row < WORLD_SIZE * img_scale; row++ ) {
+		for ( int col = 0; col < WORLD_SIZE * img_scale; col++ ) {
+			int col_idx = col / img_scale;
+			int row_idx = row / img_scale;
+
+			int r = 255, g = 255, b = 255;
+
+      if (graph[row_idx][col_idx].was_visited) {
+        r = g = b = 128;
+      }
+
+      for (int i = 0; i < frontier_len; i++) {
+        Coord fc = frontier[i];
+        if (fc.x == col_idx && fc.y == row_idx) {
+          r = (int)((float)255.0f / ((float)i + 1.0f));
+          g = b = 0;
+          break;
+        }
+      }
+
+			Coord parent = graph[goal.y][goal.x].parent;
+			while ( parent.x != NO_PARENT && parent.y != NO_PARENT ) {
+				if ( parent.x == col_idx && parent.y == row_idx ) {
+					r = 0;
+					b = 255;
+					g = 0;
+					break;
+				}
+				parent = graph[parent.y][parent.x].parent;
+			}
+			if ( graph[row_idx][col_idx].is_obstacle ) {
+				r = g = b = 0;
+			}
+			if ( row_idx == 0 && col_idx == 0 ) {
+				r = b = 0;
+				g = 255;
+			}
+			if ( ( row_idx == WORLD_SIZE - 1 ) && ( col_idx == WORLD_SIZE - 1 ) ) {
+				b = g = 0;
+			}
+
+			fprintf( fp, "%i %i %i ", r, g, b );
+		}
+		fprintf( fp, "\n" );
+	}
+	fclose( fp );
+}
+
 void astar( Coord start, Coord goal ) {
 	Coord frontier[MAX_FRONTIER];
 	int frontier_score[MAX_FRONTIER];
@@ -65,7 +126,7 @@ void astar( Coord start, Coord goal ) {
 	frontier_score[0] = 0;
 	int frontier_len = 1;
 
-  graph[start.y][start.x].was_visited = true;
+	graph[start.y][start.x].was_visited = true;
 
 	int probe_count = 0;
 
@@ -102,17 +163,22 @@ void astar( Coord start, Coord goal ) {
 				if ( next.y < 0 || next.y >= WORLD_SIZE ) {
 					continue;
 				}
+				if ( graph[next.y][next.x].is_obstacle ) {
+					continue;
+				}
 
 				// work out actual cost of going to neighbour - if cheap than last calc for
 				// this node...
 				int g = graph[current.y][current.x].cost + ADJACENT_MOVE_COST;
-				if ( !graph[next.y][next.x].was_visited || ( g < graph[next.y][next.x].cost ) ) {
-          graph[next.y][next.x].was_visited = true;
+				if ( !graph[next.y][next.x].was_visited ||
+						 ( g < graph[next.y][next.x].cost ) ) {
+					graph[next.y][next.x].was_visited = true;
 					graph[next.y][next.x].cost = g;
-          graph[next.y][next.x].parent = current;
-          // f(n) = g(n) + h(n)
-          int h = heuristic( next, goal );
-					frontier_score[frontier_len] = g + h; 
+					graph[next.y][next.x].parent = current;
+					// f(n) = g(n) + h(n)
+					int h = heuristic( next, goal );
+					frontier_score[frontier_len] = g + h;
+					// printf("g + h = %i\n", g + h);
 					frontier[frontier_len] = next;
 					frontier_len++;
 				}
@@ -137,7 +203,9 @@ void astar( Coord start, Coord goal ) {
 				} // endfor
 			}		// endwhile
 		}			// endblock
-
+#ifdef OUTPUT_IMAGES
+    write_ppm( goal, frontier, frontier_len );
+#endif
 	} // endwhile
 	printf( "v = %i, visits = %i\n", WORLD_SIZE * WORLD_SIZE, probe_count );
 }
@@ -153,6 +221,24 @@ void print_path( Coord goal ) {
 
 int main() {
 	reset_graph();
+	{ // create obstacles
+		for ( int i = 0; i < WORLD_SIZE; i++ ) {
+			graph[3][i].is_obstacle = true;
+      graph[6][i].is_obstacle = true;
+		}
+		graph[3][WORLD_SIZE - 2].is_obstacle = false;
+    graph[6][2].is_obstacle = false;
+    graph[6][5].is_obstacle = false;
+    graph[6][6].is_obstacle = false;
+    graph[7][7].is_obstacle = true;
+    graph[8][7].is_obstacle = true;
+    graph[9][7].is_obstacle = true;
+    graph[9][6].is_obstacle = true;
+    graph[9][5].is_obstacle = true;
+    graph[9][4].is_obstacle = true;
+    graph[8][4].is_obstacle = true;
+    graph[7][4].is_obstacle = true;
+	}
 	// the start square and end square (top-left and bottom-right nodes)
 	Coord start = ( Coord ){.x = 0, .y = 0 };
 	Coord goal = ( Coord ){.x = WORLD_SIZE - 1, .y = WORLD_SIZE - 1 };
